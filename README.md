@@ -614,3 +614,7 @@ MIT License
 **A lightweight local support platform designed for fast, simple, and maintainable customer-support interactions.**
 
 > Built with **Node.js + SQLite** — simple, local, and dependency-free.
+> <img width="925" height="581" alt="image" src="https://github.com/user-attachments/assets/401a069b-06e8-4936-88d4-e73552d08144" />
+<img width="929" height="589" alt="image" src="https://github.com/user-attachments/assets/d2c79d36-eef3-4010-b2d1-3cafcf6f391a" />
+
+
