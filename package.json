@@ -1,0 +1,13 @@
+{
+  "name": "intergrow-support-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "InterGrow customer support chatbot with a SQLite-backed Node.js API",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node --test backend/*.test.js"
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>InterGrow — Customer support</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Conversation history">
+        <a class="brand" href="#" aria-label="InterGrow home">
+          <span class="brand-mark" aria-hidden="true">i</span>
+          <span>intergrow</span>
+        </a>
+
+        <button class="new-chat-button" id="new-chat" type="button">
+          <span aria-hidden="true">＋</span> New conversation
+        </button>
+
+        <div class="history-heading">
+          <span>RECENT</span>
+          <button class="icon-button" id="clear-history" type="button" aria-label="Clear conversation history" title="Clear history">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 5h12M8 5V3.5h4V5m2 0-.6 11H6.6L6 5m2.5 3v5m3-5v5" /></svg>
+          </button>
+        </div>
+        <nav class="conversation-list" id="conversation-list" aria-label="Recent conversations"></nav>
+
+        <div class="sidebar-footer">
+          <span class="online-dot" aria-hidden="true"></span>
+          <span>Support assistant <span class="online-label">online</span></span>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="assistant-identity">
+            <div class="assistant-avatar" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 5.5c-5.8 0-10.5 4-10.5 9 0 2.8 1.6 5.3 4.2 6.9l-.9 4.2 4.7-2.2c.8.2 1.7.3 2.5.3 5.8 0 10.5-4.1 10.5-9.1S21.8 5.5 16 5.5Z"/><path d="M12 14.5h.1m3.9 0h.1m3.9 0h.1"/></svg>
+            </div>
+            <div>
+              <div class="assistant-name">InterGrow Support</div>
+              <div class="assistant-status"><span class="online-dot"></span> Here to help, anytime</div>
+            </div>
+          </div>
+          <div class="topbar-note"><span class="sparkle" aria-hidden="true">✦</span> Context-aware FAQ support</div>
+        </header>
+
+        <section class="chat-area" aria-label="Chat with InterGrow Support">
+          <div class="message-list" id="message-list" aria-live="polite"></div>
+          <div class="composer-wrap">
+            <div class="suggestion-list" id="suggestion-list" aria-label="Suggested questions"></div>
+            <form class="composer" id="chat-form">
+              <label class="visually-hidden" for="message-input">Type your message</label>
+              <textarea id="message-input" rows="1" maxlength="1000" placeholder="Ask us anything…" autocomplete="off"></textarea>
+              <div class="composer-tools">
+                <span class="composer-hint">Press <kbd>Enter</kbd> to send</span>
+                <button class="send-button" id="send-button" type="submit" aria-label="Send message" disabled>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5.5 14-2.3-5.9L5 12Zm6.2 1.1L19 5"/></svg>
+                </button>
+              </div>
+            </form>
+            <p class="privacy-note">InterGrow Support can make mistakes. Check important details with our team.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
